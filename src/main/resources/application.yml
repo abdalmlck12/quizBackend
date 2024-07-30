@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-cqhq08o8fa8c73c16rc0-a.singapore-postgres.render.com/quizdb_946s
+    username: quizdb_946s_user
+    password: ibBm7HyS1eLsVuHGKFBS4UyNY41JBk0L
+
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
