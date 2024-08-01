@@ -59,7 +59,11 @@ public  UserController(UserService userService, ResultService resultService ){
                         ResponseEntity.ok( value.getId()))
                 .orElseGet(() -> ResponseEntity.status(401).body("User not found"));
     }
-
+@DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteUserById(@PathVariable Integer id) {
+        userService.deleteUser(id);
+        return ResponseEntity.ok("User deleted");
+    }
 
 
     @GetMapping
