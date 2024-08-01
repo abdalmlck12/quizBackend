@@ -60,10 +60,16 @@ public  UserController(UserService userService, ResultService resultService ){
                 .orElseGet(() -> ResponseEntity.status(401).body("User not found"));
     }
 @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteUserById(@PathVariable Integer id) {
+public ResponseEntity<String> deleteUserById(@PathVariable Integer id) {
+    try {
         userService.deleteUser(id);
         return ResponseEntity.ok("User deleted");
+    } catch (Exception e) {
+        logger.error("Error deleting user with id {}: {}", id, e.getMessage());
+        return ResponseEntity.status(500).body("Error deleting user");
     }
+}
+
 
 
     @GetMapping
