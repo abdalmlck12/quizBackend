@@ -1,9 +1,8 @@
 spring:
   datasource:
-     url: jdbc:postgresql://ep-shrill-mode-a2dweaax.eu-central-1.aws.neon.tech/quizapp?user=quizapp_owner&password=8NDErcdjyM5C&sslmode=require
+    url: jdbc:postgresql://ep-raspy-cell-a2mfz8ll.eu-central-1.aws.neon.tech/quizapp?sslmode=require
     username: quizapp_owner
     password: 8NDErcdjyM5C
-
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
