@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-cqhq08o8fa8c73c16rc0-a.singapore-postgres.render.com/quizdb_946s
-    username: quizdb_946s_user
-    password: ibBm7HyS1eLsVuHGKFBS4UyNY41JBk0L
+     url: jdbc:postgresql://ep-shrill-mode-a2dweaax.eu-central-1.aws.neon.tech/quizapp?user=quizapp_owner&password=8NDErcdjyM5C&sslmode=require
+    username: quizapp_owner
+    password: 8NDErcdjyM5C
 
     driver-class-name: org.postgresql.Driver
   jpa:
